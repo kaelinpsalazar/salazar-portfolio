@@ -1,25 +1,30 @@
-/* NavBar.css */
-.navbar {
-  position: relative;
-  background-color: #333;
+.navBar {
+  color: aqua;
+  display: flex;
+  /* justify-content: center; */
+  background-color: blue;
+  padding: 10px;
+
+}
+
+.navBar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+
+}
+
+.navBar li {
+  display: inline;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size:18px ;
+  font-weight: bold;
+}
+
+.navBar a:hover {
   color: white;
-  padding: 20px;
-  transition: top 0.3s ease;
 }
-
-.navbar.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.home-page {
-  padding-top: 80px; /* Adjust this based on navbar height */
-}
-

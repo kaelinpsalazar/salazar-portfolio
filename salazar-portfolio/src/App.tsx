@@ -3,21 +3,21 @@ import HomePage from './components/HomePage/HomePage';
 import NavBar from './components/NavBar/NavBar';
 import AboutMe from './components/AboutMe/AboutMe';
 import Contact from './components/Contact/Contact';
-import './App.css';
 import ProjectsPage from './components/ProjectsPage/ProjectsPage';
+import './App.css';
 
 function App() {
   return (
     <>
-      <NavBar />
       <Router>
+      <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/about" element={<AboutMe />}/>
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </Router>
-      <ProjectsPage/>
-      <AboutMe />
-      <Contact/>
     </>
   );
 }
