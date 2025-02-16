@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./ProjectsPage.css"
 
 function ProjectsPage() {
   return (

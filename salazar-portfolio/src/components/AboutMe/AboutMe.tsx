@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./AboutMe.css"
 
 function AboutMe() {
   return (
