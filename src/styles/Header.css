@@ -1,0 +1,33 @@
+/* Header.css */
+nav {
+  background-color: #2d3748; /* Dark gray background */
+  color: white;
+  padding: 1rem; /* Space around the nav */
+  display: flex;
+  gap: 1.5rem; /* Spacing between the links */
+  justify-content: center; /* Centering the items horizontally */
+  align-items: center; /* Vertically align the items */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #68d391; /* Light green hover effect */
+}
+
+nav a:active {
+  color: #38a169; /* Darker green on click */
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack the items vertically on smaller screens */
+    gap: 1rem;
+  }
+}
